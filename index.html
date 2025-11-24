@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Anastasia Psarou | PhD Student </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+      }
+      .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+      }
+    </style>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-slate-50 text-slate-900 antialiased selection:bg-indigo-100 selection:text-indigo-900">
+    
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-40 w-full bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-violet-600">
+                Anastasia Psarou
+            </div>
+            <div class="hidden md:flex gap-8">
+                <a href="#home" class="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors">About</a>
+                <a href="#research" class="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors">Publications</a>
+                <a href="#news" class="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors">News</a>
+                <a href="#contact" class="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-6 py-12 space-y-24">
+        
+        <!-- Hero Section -->
+        <section id="home" class="scroll-mt-28">
+            <div class="flex flex-col md:flex-row gap-12 items-center">
+            <div class="flex-1 space-y-6">
+                <div class="inline-flex items-center px-3 py-1 rounded-full bg-indigo-50 text-indigo-700 text-xs font-semibold uppercase tracking-wider">
+                PhD Student
+                </div>
+                <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight">
+                Anastasia Psarou
+                </h1>
+                <p id="bio-text" class="text-lg text-slate-600 leading-relaxed max-w-2xl">
+                <!-- Bio injected via JS -->
+                </p>
+                
+                <div id="research-areas" class="flex flex-wrap gap-3 pt-2">
+                <!-- Areas injected via JS -->
+                </div>
+
+                <div class="flex gap-4 pt-4">
+                <a href="https://github.com/AnastasiaPsarou" title="GitHub" class="p-3 text-slate-500 hover:text-slate-900 hover:bg-slate-100 rounded-full transition-all">
+                    <!-- Standard GitHub SVG Logo -->
+                    <svg viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/anastasia-psarou/" class="p-3 text-slate-500 hover:text-blue-700 hover:bg-blue-50 rounded-full transition-all"><i data-lucide="linkedin"></i></a>
+                </div>
+            </div>
+            
+            <div class="w-full md:w-1/3 space-y-8">
+                <div class="aspect-square rounded-3xl overflow-hidden bg-slate-200 shadow-2xl rotate-3 hover:rotate-0 transition-all duration-500 border-4 border-white">
+                <img src="images/anastasia.jpeg" alt="Profile" class="w-full h-full object-cover"/>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Research Papers -->
+        <section id="research" class="scroll-mt-28">
+            <div class="flex items-center gap-3 mb-10">
+            <i data-lucide="book-open" class="text-indigo-600 w-7 h-7"></i>
+            <h2 class="text-3xl font-bold text-slate-900">Selected Publications</h2>
+            </div>
+            
+            <div id="papers-list" class="grid gap-6">
+            <!-- Papers injected via JS -->
+            </div>
+        </section>
+
+        <!-- News / Updates -->
+        <section id="news" class="scroll-mt-28">
+            <div class="flex items-center gap-3 mb-10">
+            <i data-lucide="newspaper" class="text-indigo-600 w-7 h-7"></i>
+            <h2 class="text-3xl font-bold text-slate-900">Recent News</h2>
+            </div>
+
+            <div class="relative pl-8 border-l-2 border-slate-200 space-y-12" id="news-list">
+                <!-- News injected via JS -->
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="scroll-mt-28 mb-20">
+            <div class="bg-slate-900 text-white rounded-3xl p-8 md:p-16 text-center space-y-6 relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+                     <div class="absolute top-[-50%] left-[-50%] w-[200%] h-[200%] bg-[radial-gradient(circle,rgba(255,255,255,0.8)_0%,transparent_50%)]"></div>
+                </div>
+                
+                <h2 class="text-3xl md:text-4xl font-bold relative z-10"></h2>
+                <p class="text-slate-300 max-w-xl mx-auto text-lg relative z-10">
+                    I am always open to discussing new research opportunities.
+                </p>
+                <div class="flex justify-center gap-4 pt-4 relative z-10">
+                    <button class="px-8 py-3 bg-indigo-600 hover:bg-indigo-500 text-white rounded-full font-semibold transition-all transform hover:scale-105">
+                        Get in Touch
+                    </button>
+                <a href="CV/A_Psarou_CV (7).pdf">
+                    <button class="px-8 py-3 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white border border-white/20 rounded-full font-semibold transition-all">
+                        Download CV
+                    </button>
+                </a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="border-t border-slate-200 py-8 text-center text-slate-500 text-sm">
+            <p>&copy; <span id="year"></span> Anastasia Psarou. All rights reserved.</p>
+        </footer>
+    </main>
+
+    <!-- Application Logic -->
+    <script type="module">
+        // --- Constants & Data ---
+        const RESEARCHER_BIO = `I am a third-year PhD student at the Jagiellonian University, working under the supervision of
+          Professor Rafał Kucharski. My research is conducted within the COeXISTENCE project, funded by the European Research Council (ERC). My work investigates how autonomous vehicles make routing decisions.
+          I develop multi-agent reinforcement learning models to simulate and optimize their interactions within dynamic traffic networks.`;
+
+        const RESEARCH_AREAS = [
+            "Multi-agent systems", "Reinforcement learning", "Agent-based modeling", "Transportation"
+        ];
+
+        const PAPERS = [
+            {
+                id: "p1",
+                title: "RouteRL: Multi-agent reinforcement learning framework for urban route choice with autonomous vehicles",
+                authors: ["Ahmet Onur Akman*", "Anastasia Psarou*", "Łukasz Gorczyca", "Zoltán György Varga", "Grzegorz Jamróz", "Rafał Kucharski"],
+                conference: "SoftwareX 2025",
+                year: 2025,
+                abstract: "RouteRL is a novel framework that integrates multi-agent reinforcement learning (MARL) with a microscopic traffic simulation for the development of efficient collective route choice strategies for autonomous vehicles (AVs). The proposed framework models the daily urban route choices of driver agents of two types: human drivers, emulated using behavioral route choice models, and AVs, modeled as MARL agents optimizing their policies for a predefined objective. RouteRL aims to advance research in MARL, transport modeling, and human–AI interaction for transportation applications. This study presents a technical report on RouteRL, outlines its potential research contributions, and showcases its impact via illustrative examples. Initial findings show that human travel times could increase following the introduction of AVs in urban environments, highlighting the importance of future studies to support efficient urban mobility.",
+                citations: 6,
+                tags: ["Multi-agent reinforcement learning", "Route choice"]
+             },
+            {
+                id: "p3",
+                title: "Collaboration Between the City and Machine Learning Community is Crucial to Efficient Autonomous Vehicles Routing",
+                authors: ["Anastasia Psarou", "Ahmet Onur Akman", "Łukasz Gorczyca", "Michał Hoffmann", "Grzegorz Jamróz", "Rafał Kucharski"],
+                conference: "under submission",
+                year: 2025,
+                abstract: "Autonomous vehicles (AVs), possibly using Multi-Agent Reinforcement Learning (MARL) for simultaneous route optimization, may destabilize traffic networks, with human drivers potentially experiencing longer travel times. We study this interaction by simulating human drivers and AVs. Our experiments with standard MARL algorithms reveal that, both in simplified and complex networks, policies often fail to converge to an optimal solution or require long training periods. This problem is amplified by the fact that we cannot rely entirely on simulated training, as there are no accurate models of human routing behavior. At the same time, real-world training in cities risks destabilizing urban traffic systems, increasing externalities, such as  emissions, and introducing non-stationarity as human drivers will adapt unpredictably to AV behaviors. In this position paper, we argue that city authorities must collaborate with the ML community to monitor and critically evaluate the routing algorithms proposed by car companies toward fair and system-efficient routing algorithms and regulatory standards.",
+                citations: 3,
+                tags: ["Multi-agent reinforcement learning"]
+            },
+            {
+                id: "p2",
+                title: "URB -- Urban Routing Benchmark for RL-equipped Connected Autonomous Vehicles",
+                authors: ["Ahmet Onur Akman", "Anastasia Psarou", "Michał Hoffmann", "Łukasz Gorczyca", "Łukasz Kowalski", "Paweł Gora", "Grzegorz Jamróz", "Rafał Kucharski"],
+                conference: "NeurIPS 2025",
+                year: 2025,
+                abstract: "Connected Autonomous Vehicles (CAVs) promise to reduce congestion in future urban networks, potentially by optimizing their routing decisions. Unlike for human drivers, these decisions can be made with collective, data-driven policies, developed using machine learning algorithms. Reinforcement learning (RL) can facilitate the development of such collective routing strategies, yet standardized and realistic benchmarks are missing. To that end, we present URB: Urban Routing Benchmark for RL-equipped Connected Autonomous Vehicles. URB is a comprehensive benchmarking environment that unifies evaluation across 29 real-world traffic networks paired with realistic demand patterns. URB comes with a catalog of predefined tasks, multi-agent RL (MARL) algorithm implementations, three baseline methods, domain-specific performance metrics, and a modular configuration scheme. Our results show that, despite the lengthy and costly training, state-of-the-art MARL algorithms rarely outperformed humans. The experimental results reported in this paper initiate the first leaderboard for MARL in large-scale urban routing optimization. They reveal that current approaches struggle to scale, emphasizing the urgent need for advancements in this domain.",
+                citations: 1,
+                tags: ["Multi-agent reinforcement learning", "Route choice"]
+            },
+            {
+                id: "p4",
+                title: "Autonomous vehicles need social awareness to find optima in multi-agent reinforcement learning routing games",
+                authors: ["Anastasia Psarou, Łukasz Gorczyca, Dominik Gaweł, Rafał Kucharski"],
+                conference: "under submission",
+                year: 2025,
+                abstract: "Previous work has shown that when multiple selfish Autonomous Vehicles (AVs) are introduced to future cities and start learning optimal routing strategies using Multi-Agent Reinforcement Learning (MARL), they may destabilize traffic systems, as they would require a significant amount of time to converge to the optimal solution, equivalent to years of real-world commuting. We demonstrate that moving beyond the selfish component in the reward significantly relieves this issue. If each AV, apart from minimizing its own travel time, aims to reduce its impact on the system, this will be beneficial not only for the system-wide performance but also for each individual player in this routing game. By introducing an intrinsic reward signal based on the marginal cost matrix, we significantly reduce training time and achieve convergence more reliably. Marginal cost quantifies the impact of each individual action (route-choice) on the system (total travel time). Including it as one of the components of the reward can reduce the degree of non-stationarity by aligning agents' objectives. Notably, the proposed counterfactual formulation preserves the system's equilibria and avoids oscillations. Our experiments show that training MARL algorithms with our novel reward formulation enables the agents to converge to the optimal solution, whereas the baseline algorithms fail to do so. We show these effects in both a toy network and the real-world network of Saint-Arnoult. Our results optimistically indicate that social awareness (i.e., including marginal costs in routing decisions) improves both the system-wide and individual performance of future urban systems with AVs.",
+                citations: 0,
+                tags: ["Multi-agent reinforcement learning", "Route choice"]
+            },
+             
+
+        ];
+
+        const NEWS_UPDATES = [
+            {
+                date: "Sep 2025",
+                title: "Research visit in ETH Zurich",
+                description: "I am currently undertaking a six-month research visit at ETH Zurich within the Institute for Transport Planning and Systems (IVT). My work focuses on congestion pricing and fairness in multi-agent traffic systems, leveraging multi-agent reinforcement learning. The visit is supervised by Dr. Anastasios Kouvelas and Dr. Michalis Makridis, and supported by the “Excellence Initiative – Research University” grant of Jagiellonian University.",
+                category: "Research visit"
+            },
+            {
+                date: "Sep 2025",
+                title: "New Paper Accepted to NeurIPS",
+                description: "Our URB routing benchmark paper for RL-equipped Connected Autonomous Vehicles is accepted to NeurIPS 2025.",
+                category: "Publication"
+            },
+            {
+                date: "Aug 2025",
+                title: "New Paper Accepted to the SoftwareX Journal",
+                description: "Our RouteRL paper framework for modeling the routing decisions of autonomous vehicles using multi-agent reinforcement learning is accpted to the SoftwareX journal.",
+                category: "Publication"
+            },
+
+            {
+                date: "July 2025",
+                title: "Attended the CIFAR DLRL Summer School",
+                description: "",
+                category: "Summer School"
+            }
+        ];
+
+        // --- DOM Rendering ---
+        
+        // Render Bio & Areas
+        document.getElementById('bio-text').textContent = RESEARCHER_BIO;
+        const areasContainer = document.getElementById('research-areas');
+        RESEARCH_AREAS.forEach(area => {
+            const span = document.createElement('span');
+            span.className = "px-4 py-2 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium";
+            span.textContent = area;
+            areasContainer.appendChild(span);
+        });
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Render Papers
+        const papersList = document.getElementById('papers-list');
+        PAPERS.forEach(paper => {
+            const el = document.createElement('div');
+            el.className = "group relative bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:border-indigo-200 transition-all";
+            el.innerHTML = `
+                <div class="flex flex-col md:flex-row justify-between gap-4">
+                  <div class="flex-1 space-y-3">
+                    <h3 class="text-xl font-bold text-slate-900 group-hover:text-indigo-600 transition-colors">${paper.title}</h3>
+                    <div class="text-sm text-slate-500 font-medium">${paper.authors.join(", ")}</div>
+                    <div class="flex items-center gap-4 text-xs font-semibold uppercase tracking-wider text-slate-400">
+                      <span class="bg-slate-100 px-2 py-1 rounded text-slate-600">${paper.conference}</span>
+                      <span>${paper.year}</span>
+                      <span>${paper.citations} Citations</span>
+                    </div>
+                    <p class="text-slate-600 leading-relaxed text-sm">${paper.abstract}</p>
+                    <div class="flex gap-2 pt-2">
+                      ${paper.tags.map(tag => `<span class="text-xs px-2 py-1 bg-indigo-50 text-indigo-700 rounded-md">#${tag}</span>`).join('')}
+                    </div>
+                  </div>
+                  <div class="shrink-0">
+                    <button class="flex items-center justify-center w-12 h-12 rounded-full bg-slate-50 text-slate-400 hover:bg-indigo-600 hover:text-white transition-all">
+                      <i data-lucide="file-text" class="w-5 h-5"></i>
+                    </button>
+                  </div>
+                </div>
+            `;
+            papersList.appendChild(el);
+        });
+
+        // Render News
+        const newsList = document.getElementById('news-list');
+        NEWS_UPDATES.forEach(item => {
+            const el = document.createElement('div');
+            el.className = "relative";
+            el.innerHTML = `
+                <div class="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-4 border-white bg-indigo-600 ring-4 ring-indigo-50"></div>
+                <div class="space-y-1">
+                    <div class="flex items-center gap-3">
+                        <span class="text-sm font-semibold text-indigo-600">${item.date}</span>
+                        <span class="text-xs font-medium px-2 py-0.5 rounded-full bg-slate-100 text-slate-500 uppercase tracking-wide">${item.category}</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900">${item.title}</h3>
+                    <p class="text-slate-600 leading-relaxed max-w-2xl">${item.description}</p>
+                </div>
+            `;
+            newsList.appendChild(el);
+        });
+
+        // Initialize Icons
+        lucide.createIcons();
+
+    </script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
