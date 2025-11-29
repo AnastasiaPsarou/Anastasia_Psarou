@@ -111,12 +111,14 @@
                 
                 <h2 class="text-3xl md:text-4xl font-bold relative z-10"></h2>
                 <p class="text-slate-300 max-w-xl mx-auto text-lg relative z-10">
-                    I am always open to discussing new research opportunities.
+                    I am open to discussing new research opportunities.
                 </p>
                 <div class="flex justify-center gap-4 pt-4 relative z-10">
+                    <a href="mailto:anastasia.psarou@uj.edu.pl">
                     <button class="px-8 py-3 bg-indigo-600 hover:bg-indigo-500 text-white rounded-full font-semibold transition-all transform hover:scale-105">
                         Get in Touch
                     </button>
+                    </a>
                 <a href="CV/A_Psarou_CV (7).pdf">
                     <button class="px-8 py-3 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white border border-white/20 rounded-full font-semibold transition-all">
                         Download CV
@@ -134,10 +136,13 @@
     <!-- Application Logic -->
     <script type="module">
         // --- Constants & Data ---
-        const RESEARCHER_BIO = `I am a third-year PhD student at the Jagiellonian University, working under the supervision of
-          Professor Rafał Kucharski. My research is conducted within the COeXISTENCE project, funded by the European Research Council (ERC). My work investigates how autonomous vehicles make routing decisions.
-          I develop multi-agent reinforcement learning models to simulate and optimize their interactions within dynamic traffic networks.`;
-
+        const RESEARCHER_BIO = `
+            I am a third-year PhD student at the Jagiellonian University, working under the supervision of
+            Professor <a href="https://www.rafalkucharskilab.pl/" target="_blank" class="text-indigo-600 underline">Rafał Kucharski</a>.
+            My research is conducted within the COeXISTENCE project, funded by the European Research Council (ERC).
+            My work investigates how autonomous vehicles make routing decisions.
+            I develop multi-agent reinforcement learning models to simulate and optimize their interactions within dynamic traffic networks.
+            `;
         const RESEARCH_AREAS = [
             "Multi-agent systems", "Reinforcement learning", "Agent-based modeling", "Transportation"
         ];
@@ -151,7 +156,8 @@
                 year: 2025,
                 abstract: "RouteRL is a novel framework that integrates multi-agent reinforcement learning (MARL) with a microscopic traffic simulation for the development of efficient collective route choice strategies for autonomous vehicles (AVs). The proposed framework models the daily urban route choices of driver agents of two types: human drivers, emulated using behavioral route choice models, and AVs, modeled as MARL agents optimizing their policies for a predefined objective. RouteRL aims to advance research in MARL, transport modeling, and human–AI interaction for transportation applications. This study presents a technical report on RouteRL, outlines its potential research contributions, and showcases its impact via illustrative examples. Initial findings show that human travel times could increase following the introduction of AVs in urban environments, highlighting the importance of future studies to support efficient urban mobility.",
                 citations: 6,
-                tags: ["Multi-agent reinforcement learning", "Route choice"]
+                tags: ["Multi-agent reinforcement learning", "Route choice"],
+                url: "https://www.sciencedirect.com/science/article/pii/S2352711025002468"
              },
             {
                 id: "p3",
@@ -191,8 +197,20 @@
             {
                 date: "Sep 2025",
                 title: "Research visit in ETH Zurich",
-                description: "I am currently undertaking a six-month research visit at ETH Zurich within the Institute for Transport Planning and Systems (IVT). My work focuses on congestion pricing and fairness in multi-agent traffic systems, leveraging multi-agent reinforcement learning. The visit is supervised by Dr. Anastasios Kouvelas and Dr. Michalis Makridis, and supported by the “Excellence Initiative – Research University” grant of Jagiellonian University.",
-                category: "Research visit"
+                description: `
+                    I am currently undertaking a six-month research visit at 
+                    ETH Zurich within the Institute for Transport Planning and Systems (IVT).
+                    My work focuses on congestion pricing and fairness in multi-agent traffic systems, leveraging multi-agent reinforcement learning.
+                    The visit is supervised by 
+                    <a href="https://www.ivt.ethz.ch/personen/profil.anastasios-kouvelas.html" target="_blank" class="text-indigo-600 underline">
+                        Dr. Anastasios Kouvelas
+                    </a> and 
+                    <a href="https://www.michailmakridis.com/" target="_blank" class="text-indigo-600 underline">
+                        Dr. Michalis Makridis
+                    </a>,
+                    and supported by the “Excellence Initiative – Research University” grant of Jagiellonian University.
+                    `,                
+                    category: "Research visit"
             },
             {
                 date: "Sep 2025",
@@ -218,7 +236,7 @@
         // --- DOM Rendering ---
         
         // Render Bio & Areas
-        document.getElementById('bio-text').textContent = RESEARCHER_BIO;
+        document.getElementById('bio-text').innerHTML = RESEARCHER_BIO;
         const areasContainer = document.getElementById('research-areas');
         RESEARCH_AREAS.forEach(area => {
             const span = document.createElement('span');
